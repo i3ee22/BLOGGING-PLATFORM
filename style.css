@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+nav button {
+  margin-left: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+}
+
+main {
+  padding: 2rem;
+}
+
+.post {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 800px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.post p {
+  color: #dddddd;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 40%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  color: white;
+  z-index: 999;
+}
+.hidden {
+  display: none;
+}
+
+.modal button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal button:hover {
+  opacity: 0.9;
+}
