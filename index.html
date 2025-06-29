@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazing Blog</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <h1>Amazing Blog</h1>
+    <nav>
+      <button onclick="showLogin()">Login</button>
+      <button onclick="showPostForm()">New Post</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="posts"></section>
+  </main>
+
+  <!-- Post Form Modal -->
+  <section id="postForm" class="modal hidden">
+    <h2>New Post</h2>
+    <input type="text" id="postTitle" placeholder="Post Title" />
+    <textarea id="postContent" placeholder="Write your post here..."></textarea>
+    <button onclick="submitPost()">Publish</button>
+    <button onclick="hideModal('postForm')">Cancel</button>
+  </section>
+
+  <!-- Login Modal -->
+  <section id="loginForm" class="modal hidden">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <button onclick="hideModal('loginForm')">Cancel</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
